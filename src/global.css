@@ -11,6 +11,16 @@
     margin: 0 auto;
 }
 
+.campoUsuario {
+    margin: 8px 18px;
+    padding: 8px;
+    width: 95%;
+    border: 2px solid var(--corPrincipal);
+    outline: var(--corPrincipal);
+    border-radius: 16px;
+    text-align: center;
+}
+
 :root {
     --corPrincipal: #40739e;
     --corSecundaria: #2f3640;

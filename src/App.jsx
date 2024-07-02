@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 import Perfil from "./components/Perfil";
-import Formulario from "./components/Formulario";
 import ReposList from "./components/ReposList";
 
 function App() {
@@ -10,7 +9,9 @@ function App() {
 
   return (
     <>
-      <input type="text" onBlur={(e) => setNomeUsuario(e.target.value)} />
+      <div className="container">
+        <input className="campoUsuario" type="text" placeholder="Digite o usuario do Github" onBlur={(e) => setNomeUsuario(e.target.value)} />
+      </div>
 
       {nomeUsuario.length > 4 && (
         <>
